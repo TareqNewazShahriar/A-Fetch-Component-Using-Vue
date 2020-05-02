@@ -30,12 +30,14 @@ export default {
    }),
    watch: {
       start(newVal) {
-         this.reset(newVal);
-         if (newVal === true) this.dispatchAll(this.url);
+         if (newVal === true) {
+            this.reset(newVal);
+            this.dispatchAll(this.url);
+         }
       }
    },
    created() {
-      this.reset(this.start);
+      this.loading = this.start;
       if (this.start === true) this.dispatchAll(this.url);
    },
    methods: {
@@ -58,7 +60,11 @@ export default {
 
          Promise.all(promises).then(() => {
             vm.loading = false;
-            vm.$emit("resolved", !vm.error ? vm.dataset : null, /*is error?*/ vm.error);
+            vm.$emit(
+               "resolved",
+               !vm.error ? vm.dataset : null,
+               /*is error?*/ vm.error
+            );
 
             if (vm.error) {
                let unwatch = vm.$watch("error", function(newVal) {
@@ -84,7 +90,7 @@ export default {
                      case 401:
                         throw new Error("Data wasn't matched.");
                      case 404:
-                        throw new Error("Data not found.");
+                        throw new Error("Not found.");
                      default:
                         throw new Error(`${r.status}: ${r.statusText}`);
                   }
