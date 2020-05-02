@@ -1,0 +1,1 @@
+# a-fetch-component-in-vue
