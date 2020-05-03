@@ -7,7 +7,7 @@ What that component is all about:
 4. If error occurred, it will handle it and will show the error.
 
 
-### A sample usage of this component
+### Sample usage of this component
 ```vue
 <Fetch
    url="https://yesno.wtf/api"
