@@ -1,3 +1,6 @@
+/* MIT License. Tareq Newaz Shahriar.
+   https://github.com/TareqNewazShahriar/a-fetch-component-using-vue
+*/
 <template>
    <div>
       <!-- This is the error message html, change it -->
