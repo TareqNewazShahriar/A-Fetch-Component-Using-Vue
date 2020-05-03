@@ -24,14 +24,15 @@ export default {
    },
    data: () => ({
       loading: false,
-      dataset: {},
+      dataset: null,
       error: false,
       errorData: null
    }),
    watch: {
       start(newVal) {
          if (newVal === true) {
-            this.reset(newVal);
+            this.error = false;
+            this.loading = true;
             this.dispatchAll(this.url);
          }
       }
@@ -41,12 +42,6 @@ export default {
       if (this.start === true) this.dispatchAll(this.url);
    },
    methods: {
-      reset(start) {
-         this.error = false;
-         this.errorData = null;
-         this.dataset = {};
-         this.loading = start;
-      },
       dispatchAll(urlData) {
          let vm = this;
 
@@ -58,6 +53,7 @@ export default {
                promises.push(this.dispatch(urlData[key], key));
          }
 
+         this.dataset = {};
          Promise.all(promises).then(() => {
             vm.loading = false;
             vm.$emit(

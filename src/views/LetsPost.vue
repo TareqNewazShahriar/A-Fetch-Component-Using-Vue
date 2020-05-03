@@ -1,17 +1,19 @@
 <template>
    <div>
-      <h2>Let's POST Nowhere</h2>
-      <button @click="start = true">Start Post</button>
+      <h2>Let's POST</h2>
+      
+      <button @click="start = true">Start POST</button>
       <br />
       Data: {{data}} | Error: {{isError}}
+      
       <Fetch
          :start="start"
-         url="/here/nowhere/login"
+         url="https://jsonplaceholder.typicode.com/posts"
          :options="{ method: 'POST',
                headers: { 'Content-Type': 'application/json' }, 
-               body: JSON.stringify({ email:'str@iddd.com', password:'sdfsdfsdf' })
+               body: JSON.stringify({ woow: 'yahhhoo', thats: 'amazing', whatTimeIsIt: new Date() })
             }"
-         @resolved="(_data, _isError) => { data = _data; isError = _isError; start = false; }"
+         @resolved="_data => { data = _data; start = false; }"
       />
    </div>
 </template>
