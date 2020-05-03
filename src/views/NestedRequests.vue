@@ -9,12 +9,12 @@
          {{i+1}}. {{area.name}}
       </div>
 
+      <!-- PokéAPI is free and open to use. And it is requested to 
+         abide by the fair use policy. -->
       <Fetch
          url="https://pokeapi.co/api/v2/location?offset=20&limit=10"
          @resolved="data => locations = data.results"
       />
-      <!-- PokéAPI is free and open to use. It is asked every
-       developer to abide by the fair use policy. -->
       <Fetch
          :start="locationChanged"
          :url="selectedUrl"

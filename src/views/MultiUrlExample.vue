@@ -1,8 +1,10 @@
 <template>
    <div>
       <h2>Multiple URL Example</h2>
+
       <pre>{{data1}}</pre>
       <pre>{{data2}}</pre>
+
       <Fetch
          :url="{ randomYesno: 'https://yesno.wtf/api', randomYesnoAgain: 'https://yesno.wtf/api' }"
          @resolved="takeData"
