@@ -110,6 +110,6 @@ export default {
 
 Fell free to issue issues and suggestions. Thanks.
 
-#### Useful command to start the project
+#### Useful commands to start the project
 ```npm install```
 ```npm run serve```
