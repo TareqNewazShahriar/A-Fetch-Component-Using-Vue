@@ -1,4 +1,4 @@
-# A Fetch Component Using Vue
+### A Fetch Component Using Vue
 
 What that component is all about:
 1. This component performs http requests using Javascript `fetch` (all modern browsers have support to it, this is not new anymore).
