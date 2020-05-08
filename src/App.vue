@@ -1,8 +1,8 @@
 <template>
 	<div id="app">
 		<div id="nav">
-			<router-link to="/">Most Common Use Case</router-link>|
-			<router-link :to="{name: 'multi-urls'}">Multiple URL Example</router-link>|
+			<router-link to="/">Most Common Use Case</router-link> |
+			<router-link :to="{name: 'multi-urls'}">Multiple URL Example</router-link> |
 			<router-link :to="{name: 'nested'}">Nested Requests</router-link> |
          <router-link :to="{name: 'post'}">Let's Post</router-link> |
          <router-link :to="{name: 'error'}">Let's Occur An Error</router-link>
