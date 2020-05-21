@@ -27,7 +27,8 @@ Let's know its props and events.
 ### Component Props
 1. `start` (boolean; default: true): If `true`, http request will be started. If omitted, then request will be started immediately when the component is created.
 2. `url` (string / Json): Pass your URL as a string. If you want to execute multiple requests, pass each URL with a _key_ as in Json object. So the returned object will have the data of each response with that _key_. Let's see an example:
-```vue
+
+```vuejs
 // MultiUrlExample.vue
 <template>
    <div>
@@ -60,6 +61,7 @@ export default {
 };
 </script>
 ```
+
 3. `options` (Json, default: { method: "GET" }): Pass the `options` Json object of the _fetch api_, which takes _method_, _headers_, data _body_ etc and more. To see details, go to the link and find [Supplying request options](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
 4. `responseType` (string, default: "json"): `fetch` API has some methods to parse the response _body_. Tell the component what type of data will come. Value can be one of these: json / text / formData / blob / arrayBuffer / none.
 
@@ -68,6 +70,7 @@ export default {
 2. `@finished`: When everything is finished, like either data successfully returned or error occurred and error shown, then error-message is gone - then this event will be emitted with a _true_ or _false_. _false_ for error, otherwise _true_.
 
 Here's a usage of nested requests. Firstly, some locations will be loaded; then if an location is selected, its areas will be loaded:
+
 ```vue
 // NestedRequests.vue
 <template>
