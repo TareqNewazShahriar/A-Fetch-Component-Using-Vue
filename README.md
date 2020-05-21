@@ -25,9 +25,10 @@ Here's the comopnent [src > components > fetch.vue](https://raw.githubuserconten
 Let's know its props and events.
 
 ### Component Props
-1. `start` (boolean | default: true): If `true`, http request will be started. If omitted, then request will be started immediately when the component is created.
-2. `url` (string / Json): Pass your URL as a string. If you want to execute multiple requests, pass each URL with a _key_ as in Json object. So the returned object will have the data of each response with that _key_. Let's see an example:
-```vue
+* `start` (boolean; default: undefined): If `true`, http request will be started. If this prop is not used (so the value will be undefined), then the request will be initiated when the component is created.
+* `url` (string / Json): Pass your URL as a string. If you want to execute multiple requests, pass each URL with a _key_ as in Json object. So the returned object will have the data of each response with that _key_. Let's see an example:
+
+```vuejs
 // MultiUrlExample.vue
 <template>
    <div>
@@ -60,14 +61,16 @@ export default {
 };
 </script>
 ```
-3. `options` (Json | default: { method: "GET" }): Pass the `options` Json object of the _fetch api_, which takes _method_, _headers_, data _body_ etc and more. To see details, go to the link and find [Supplying request options](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
-4. `responseType` (string | default: "json"): `fetch` API has some methods to parse the response _body_. Tell the component what type of data will come. Value can be one of these: json / text / formData / blob / arrayBuffer / none.
+
+* `options` (Json, default: { method: "GET" }): Pass the `options` Json object of the _fetch api_, which takes _method_, _headers_, data _body_ etc and more. To see details, go to the link and find [Supplying request options](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
+* `responseType` (string, default: "json"): `fetch` API has some methods to parse the response _body_. Tell the component what type of data will come. Value can be one of these: json / text / formData / blob / arrayBuffer / none.
 
 ### Component Events
-1. `@resolved`: The request may resolve successfully or with an error. `resolved` event will have two parameters - data and isError. _data_ will contain the response data; if error occurred, _isError_ will be `true` and _data_ will be null.
-2. `@finished`: When everything is finished, like either data successfully returned or error occurred and error shown, then error-message is gone - then this event will be emitted with a _true_ or _false_. _false_ for error, otherwise _true_.
+* `@resolved`: The request may resolve successfully or with an error. `resolved` event will have two parameters - data and isError. _data_ will contain the response data; if error occurred, _isError_ will be `true` and _data_ will be null.
+* `@finished`: When everything is finished, like either data successfully returned or error occurred and error shown, then error-message is gone - then this event will be emitted with a _true_ or _false_. _false_ for error, otherwise _true_.
 
 Here's a usage of nested requests. Firstly, some locations will be loaded; then if an location is selected, its areas will be loaded:
+
 ```vue
 // NestedRequests.vue
 <template>
@@ -110,8 +113,9 @@ export default {
 </script>
 ```
 
-Fell free to issue issues and suggestions. Thanks.
+#### Commands to start the project
+* `npm install`
+* `npm run serve`
 
-#### Useful commands to start the project
-```npm install```
-```npm run serve```
+
+Fell free to issue issues and suggestions. Thanks.
