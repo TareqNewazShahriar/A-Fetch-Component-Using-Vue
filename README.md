@@ -25,7 +25,7 @@ Here's the comopnent [src > components > fetch.vue](https://raw.githubuserconten
 Let's know its props and events.
 
 ### Component Props
-1. `start` (boolean | default: true): If `true`, http request will be started. If omitted, then request will be started immediately when the component is created.
+1. `start` (boolean; default: true): If `true`, http request will be started. If omitted, then request will be started immediately when the component is created.
 2. `url` (string / Json): Pass your URL as a string. If you want to execute multiple requests, pass each URL with a _key_ as in Json object. So the returned object will have the data of each response with that _key_. Let's see an example:
 ```vue
 // MultiUrlExample.vue
@@ -60,8 +60,8 @@ export default {
 };
 </script>
 ```
-3. `options` (Json | default: { method: "GET" }): Pass the `options` Json object of the _fetch api_, which takes _method_, _headers_, data _body_ etc and more. To see details, go to the link and find [Supplying request options](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
-4. `responseType` (string | default: "json"): `fetch` API has some methods to parse the response _body_. Tell the component what type of data will come. Value can be one of these: json / text / formData / blob / arrayBuffer / none.
+3. `options` (Json, default: { method: "GET" }): Pass the `options` Json object of the _fetch api_, which takes _method_, _headers_, data _body_ etc and more. To see details, go to the link and find [Supplying request options](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
+4. `responseType` (string, default: "json"): `fetch` API has some methods to parse the response _body_. Tell the component what type of data will come. Value can be one of these: json / text / formData / blob / arrayBuffer / none.
 
 ### Component Events
 1. `@resolved`: The request may resolve successfully or with an error. `resolved` event will have two parameters - data and isError. _data_ will contain the response data; if error occurred, _isError_ will be `true` and _data_ will be null.
