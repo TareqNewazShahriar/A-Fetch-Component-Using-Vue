@@ -20,7 +20,7 @@ It is short and sweet, right! And also loader and errors will be shown. Just put
 
 ### Copy the Component and Use
 In the component template, you should use your own loader and error alert-box.
-Here's the comopnent [src > components > fetch.vue](https://github.com/TareqNewazShahriar/a-fetch-component-using-vue/blob/master/src/components/Fetch.vue). Copy the code and use it.
+Here's the comopnent [src > components > fetch.vue](https://raw.githubusercontent.com/TareqNewazShahriar/a-fetch-component-using-vue/master/src/components/Fetch.vue). Copy the code and use it.
 
 Let's know its props and events.
 
