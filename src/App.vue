@@ -1,49 +1,49 @@
 <template>
-	<div id="app">
-		<div id="nav">
-			<router-link to="/">Most Common Use Case</router-link>|
-			<router-link :to="{name: 'multi-urls'}">Multiple URL Example</router-link>|
-			<router-link :to="{name: 'nested'}">Nested Requests</router-link>|
-			<router-link :to="{name: 'post'}">Let's Post</router-link>|
-			<router-link :to="{name: 'error'}">Let's Occur An Error</router-link>
-		</div>
-		<router-view />
-	</div>
+   <div id="app">
+      <div id="nav">
+         <router-link to="/">Most Common Use Case</router-link>|
+         <router-link :to="{name: 'multi-urls'}">Multiple URL Example</router-link>|
+         <router-link :to="{name: 'nested'}">Nested Requests</router-link>|
+         <router-link :to="{name: 'post'}">Let's Post</router-link>|
+         <router-link :to="{name: 'error'}">Let's Occur An Error</router-link>
+      </div>
+      <router-view />
+   </div>
 </template>
 
 <style>
 * {
-	word-wrap: break-word;
-	word-break: break-word;
-	white-space: normal;
+   word-wrap: break-word;
+   word-break: break-word;
+   white-space: normal;
 }
 
 #app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
+   font-family: Avenir, Helvetica, Arial, sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-align: center;
+   color: #2c3e50;
 }
 
 #nav {
-	padding: 30px;
+   padding: 30px;
 }
 
 #nav a {
-	font-weight: bold;
-	color: #2c3e50;
+   font-weight: bold;
+   color: #2c3e50;
 }
 
 #nav a.router-link-exact-active {
-	color: #42b983;
+   color: #42b983;
 }
 
 .inline {
-	display: inline;
+   display: inline;
 }
 
 .border {
-	border: 1px dotted black;
+   border: 1px dotted black;
 }
 </style>
