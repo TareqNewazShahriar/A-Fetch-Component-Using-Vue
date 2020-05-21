@@ -43,7 +43,7 @@ export default {
          });
       }
 
-      this.loading = this.start !== false; // For 'true' or 'undefined', start loading
+      this.loading = this.start !== false; // For 'true' or 'null', start loading
       if (this.loading === true) this.dispatchAll(this.url);
    },
    methods: {

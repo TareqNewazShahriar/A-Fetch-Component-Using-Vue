@@ -25,7 +25,7 @@ Here's the comopnent [src > components > fetch.vue](https://raw.githubuserconten
 Let's know its props and events.
 
 ### Component Props
-* `start` (boolean; default: undefined): If `true`, http request will be started. If this prop is not used (so the value will be undefined), then the request will be initiated when the component is created.
+* `start` (boolean; default: null): If `true`, http request will be started. If this prop is not used, the request will be started after the component is initiated.
 * `url` (string / Json): Pass your URL as a string. If you want to execute multiple requests, pass each URL with a _key_ as in Json object. So the returned object will have the data of each response with that _key_. Let's see an example:
 
 ```vuejs
