@@ -1,7 +1,8 @@
 <template>
    <div>
       <h2>Multiple URL Example</h2>
-
+		<p>This page will initiate two http requests.</p>
+		<hr />
       <pre>{{data1}}</pre>
       <pre>{{data2}}</pre>
 

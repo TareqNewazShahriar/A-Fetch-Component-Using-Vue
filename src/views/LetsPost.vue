@@ -2,11 +2,17 @@
    <div>
       <h2>Let's POST</h2>
 		<p>
-			Let's post some random data to <i>jsonplaceholder.typicode.com</i>.
+			Let's post this JSON
+			<pre class="inline border">
+				{ woow: 'yahhhoo', thats: 'amazing', whatTimeIsIt: new Date() }
+			</pre>
+			to <pre class="inline">jsonplaceholder.typicode.com</pre>.
 		</p>
       <button @click="start = true">Start POST</button>
-      <br />
-      Data: {{data}} | Error: {{isError}}
+		<hr />
+      <b>Data</b>: {{data}}
+		<br />
+		<b>Error</b>: {{isError}}
       
       <Fetch
          :start="start"
