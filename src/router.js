@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MostCommonUseCase from './views/MostCommonUseCase.vue'
-import MultiUrlExample from './views/MultiUrlExample.vue'
+import MultiUrlsExample from './views/MultiUrlsExample.vue'
 import NestedRequests from './views/NestedRequests.vue'
 import LetsPost from './views/LetsPost.vue'
 import LetsOccurAnError from './views/LetsOccurAnError.vue'
@@ -16,8 +16,8 @@ const routes = [
    },
    {
       name: 'multi-urls',
-      path: '/multi-url-example',
-      component: MultiUrlExample
+      path: '/multi-urls-example',
+      component: MultiUrlsExample
    },
    {
       name: 'nested',

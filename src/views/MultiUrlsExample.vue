@@ -1,6 +1,6 @@
 <template>
    <div>
-      <h2>Multiple URL Example</h2>
+      <h2>Multiple URLs Example</h2>
         <p>This page will initiate two http requests.</p>
         <hr />
       <pre>{{data1}}</pre>
@@ -13,7 +13,7 @@
          }"
          @resolved="takeData"
       />
-      <a class="fixed-bottom" target="_blank" href="https://github.com/TareqNewazShahriar/a-fetch-component-using-vue/blob/master/src/views/MultiUrlExample.vue"></a>
+      <a class="fixed-bottom" target="_blank" href="https://github.com/TareqNewazShahriar/a-fetch-component-using-vue/blob/master/src/views/MultiUrlsExample.vue"></a>
    </div>
 </template>
 <script>
