@@ -24,6 +24,7 @@
             :url="selectedUrl"
             @resolved="data => { areas = data.areas; locationChanged = false; }"
         />
+        <a class="fixed-bottom" target="_blank" href="https://github.com/TareqNewazShahriar/a-fetch-component-using-vue/blob/master/src/views/NestedRequests.vue">Check out this view source</a>
     </div>
 </template>
 

@@ -1,5 +1,6 @@
 <template>
    <div id="app">
+      <a class="fixed-top" href="https://github.com/TareqNewazShahriar/a-fetch-component-using-vue">Github</a>
       <div id="nav">
          <router-link to="/">Most Common Use Case</router-link>|
          <router-link :to="{name: 'multi-urls'}">Multiple URL Example</router-link>|
@@ -45,5 +46,15 @@
 
 .border {
    border: 1px dotted black;
+}
+.fixed-top {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+}
+.fixed-bottom {
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
 }
 </style>

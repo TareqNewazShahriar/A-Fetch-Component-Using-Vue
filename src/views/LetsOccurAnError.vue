@@ -13,6 +13,7 @@
          @resolved="(_data, _isError) => { isError = _isError; start = false; }"
          @finished="completed = true"
       />
+      <a class="fixed-bottom" target="_blank" href="https://github.com/TareqNewazShahriar/a-fetch-component-using-vue/blob/master/src/views/LetsOccurAnError.vue">Check out this view source</a>
    </div>
 </template>
 
