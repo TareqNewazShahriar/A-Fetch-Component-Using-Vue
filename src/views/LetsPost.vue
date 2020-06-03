@@ -18,7 +18,7 @@
          :start="start"
          url="https://jsonplaceholder.typicode.com/posts"
          :options="{ method: 'POST',
-               headers: { 'Content-Type': 'application/json' },
+               headers: { 'Content-type': 'application/json; charset=UTF-8' },
                body: JSON.stringify(model)
             }"
          @resolved="_data => { data = _data; start = false; }"
