@@ -57,4 +57,7 @@
    bottom: 10px;
    right: 10px;
 }
+.fixed-bottom::after {
+   content: 'Check out this view source to see how the Fetch component was used here'
+}
 </style>

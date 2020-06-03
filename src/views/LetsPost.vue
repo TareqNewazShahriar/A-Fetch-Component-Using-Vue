@@ -23,7 +23,7 @@
             }"
          @resolved="_data => { data = _data; start = false; }"
       />
-      <a class="fixed-bottom" target="_blank" href="https://github.com/TareqNewazShahriar/a-fetch-component-using-vue/blob/master/src/views/LetsPost.vue">Check out this view source</a>
+      <a class="fixed-bottom" target="_blank" href="https://github.com/TareqNewazShahriar/a-fetch-component-using-vue/blob/master/src/views/LetsPost.vue"></a>
    </div>
 </template>
 <script>

@@ -10,7 +10,7 @@
          :url="{ randomYesno: 'https://yesno.wtf/api', randomYesnoAgain: 'https://yesno.wtf/api' }"
          @resolved="takeData"
       />
-      <a class="fixed-bottom" target="_blank" href="https://github.com/TareqNewazShahriar/a-fetch-component-using-vue/blob/master/src/views/MultiUrlExample.vue">Check out this view source</a>
+      <a class="fixed-bottom" target="_blank" href="https://github.com/TareqNewazShahriar/a-fetch-component-using-vue/blob/master/src/views/MultiUrlExample.vue"></a>
    </div>
 </template>
 <script>
