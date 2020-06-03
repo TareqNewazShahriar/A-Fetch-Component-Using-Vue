@@ -7,7 +7,10 @@
       <pre>{{data2}}</pre>
 
       <Fetch
-         :url="{ randomYesno: 'https://yesno.wtf/api', randomYesnoAgain: 'https://yesno.wtf/api' }"
+         :url="{
+            randomYesno: 'https://yesno.wtf/api',
+            forceNo: 'https://yesno.wtf/api?force=no'
+         }"
          @resolved="takeData"
       />
       <a class="fixed-bottom" target="_blank" href="https://github.com/TareqNewazShahriar/a-fetch-component-using-vue/blob/master/src/views/MultiUrlExample.vue"></a>
@@ -25,7 +28,7 @@ export default {
    methods: {
       takeData(dataset) {
          this.data1 = dataset.randomYesno;
-         this.data2 = dataset.randomYesnoAgain;
+         this.data2 = dataset.forceNo;
       }
    }
 };
