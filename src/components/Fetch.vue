@@ -33,7 +33,7 @@ export default {
    }),
    created() {
       // If 'start' prop is not used then no need to watch for it
-      if (this.show !== null) {
+      if (this.start !== null) {
          this.$watch("start", function (newVal) {
             if (newVal === true) {
                this.error = false;
