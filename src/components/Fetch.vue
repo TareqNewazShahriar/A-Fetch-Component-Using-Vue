@@ -31,7 +31,7 @@ export default {
       error: false,
       errorData: null
    }),
-   created() {
+   mounted() {
       // If 'start' prop is not used then no need to watch for it
       if (this.start !== null) {
          this.$watch("start", function (newVal) {
