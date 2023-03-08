@@ -1,6 +1,6 @@
 ### A Fetch Component Using Vue
 
-> Demo: [https://tareqnewazshahriar.github.io/fetch/dist/](https://tareqnewazshahriar.github.io/fetch/dist/)
+> Demo: [https://tareqnewazshahriar.github.io/fetch-component/dist](https://tareqnewazshahriar.github.io/fetch-component/dist)
 
 What that component is all about:
 1. This component performs http requests using Javascript `fetch` (all modern browsers have support to it, this is not new anymore).
